@@ -1,0 +1,18 @@
+conf t
+enable secret 1234
+service password-encryption
+interface f0/1
+ip address 192.168.122.134 255.255.255.252
+no shutdown
+exit
+line vty 0 15
+password 12345678
+login local
+transport input telnet
+exit
+username admin password admin01
+exit
+write
+
+
+

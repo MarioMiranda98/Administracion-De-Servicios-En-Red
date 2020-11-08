@@ -1,0 +1,114 @@
+Oct 28 18:32:23.083 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 28 18:32:23.083 HYPERVISOR: Started on IP = localhost, TCP port = 51632.
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips 
+Oct 28 18:32:23.599 GENERAL: working_dir=C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips\5f4fe104-5332-4804-8a32-d35446016f01 
+Oct 28 18:32:23.599 GENERAL: working_dir=C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips\5f4fe104-5332-4804-8a32-d35446016f01
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Oct 28 18:32:23.599 VM: VM R3 created.
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5003 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x608927c0 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/FAROL/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.2b8c.0000 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-FE-TX 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-2FE-TX 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.599 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-FE-TX 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm slot_add_binding R3 4 0 PA-2FE-TX 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm slot_add_binding R3 5 0 PA-FE-TX 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:32:23.614 HYPERVISOR: exec_cmd: vm slot_add_binding R3 6 0 PA-2FE-TX 
+Oct 28 18:41:25.645 HYPERVISOR: exec_cmd: nio create_udp udp-46b0d298-b193-46aa-bc45-6d8bff3e0406 10016 127.0.0.1 10017 
+Oct 28 18:41:25.899 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-46b0d298-b193-46aa-bc45-6d8bff3e0406 
+Oct 28 18:41:25.900 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:42:13.082 HYPERVISOR: exec_cmd: nio create_udp udp-6e1fcb87-d7cc-4c62-8a99-49ddbf7b719c 10022 127.0.0.1 10023 
+Oct 28 18:42:13.085 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-6e1fcb87-d7cc-4c62-8a99-49ddbf7b719c 
+Oct 28 18:42:13.086 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:42:23.089 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:42:23.089 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 2 0 
+Oct 28 18:42:23.090 HYPERVISOR: exec_cmd: nio delete udp-6e1fcb87-d7cc-4c62-8a99-49ddbf7b719c 
+Oct 28 18:42:30.893 HYPERVISOR: exec_cmd: nio create_udp udp-2ea72377-0ee7-4016-8e6d-77398b37a8f4 10022 127.0.0.1 10023 
+Oct 28 18:42:30.896 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-2ea72377-0ee7-4016-8e6d-77398b37a8f4 
+Oct 28 18:42:30.897 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:42:42.058 HYPERVISOR: exec_cmd: nio create_udp udp-b7af2359-0663-4a6a-a96d-9e7036274d3c 10030 127.0.0.1 10031 
+Oct 28 18:42:42.061 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-b7af2359-0663-4a6a-a96d-9e7036274d3c 
+Oct 28 18:42:42.061 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:48:27.022 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:48:27.023 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 2 0 
+Oct 28 18:48:27.024 HYPERVISOR: exec_cmd: nio delete udp-2ea72377-0ee7-4016-8e6d-77398b37a8f4 
+Oct 28 18:48:30.132 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:48:30.133 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 1 0 
+Oct 28 18:48:30.134 HYPERVISOR: exec_cmd: nio delete udp-46b0d298-b193-46aa-bc45-6d8bff3e0406 
+Oct 28 18:48:32.958 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:48:32.958 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Oct 28 18:48:32.959 HYPERVISOR: exec_cmd: nio delete udp-b7af2359-0663-4a6a-a96d-9e7036274d3c 
+Oct 28 18:52:06.664 HYPERVISOR: exec_cmd: nio create_udp udp-f81ebd7a-5a63-4cff-932d-c985c82d3006 10016 127.0.0.1 10017 
+Oct 28 18:52:06.667 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-f81ebd7a-5a63-4cff-932d-c985c82d3006 
+Oct 28 18:52:06.667 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:53:40.514 HYPERVISOR: exec_cmd: nio create_udp udp-1fe32ff7-2637-4455-ac02-eae1d1067832 10022 127.0.0.1 10023 
+Oct 28 18:53:40.517 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-1fe32ff7-2637-4455-ac02-eae1d1067832 
+Oct 28 18:53:40.517 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 18:54:40.066 HYPERVISOR: exec_cmd: nio create_udp udp-7e9cb583-12c6-4100-a608-38f8a4ff87da 10030 127.0.0.1 10031 
+Oct 28 18:54:40.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-7e9cb583-12c6-4100-a608-38f8a4ff87da 
+Oct 28 18:54:40.070 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:00:33.310 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Oct 28 19:00:33.311 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Oct 28 19:00:33.313 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:00:33.314 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Oct 28 19:00:33.457 HYPERVISOR: exec_cmd: vm start R3 
+Oct 28 19:01:03.885 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:03:33.875 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:05:18.932 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:05:18.933 HYPERVISOR: exec_cmd: vm stop R3 
+Oct 28 19:05:19.108 VM: VM R3 shutdown.
+Oct 28 19:05:19.109 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:05:25.432 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Oct 28 19:05:25.443 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Oct 28 19:05:25.444 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:05:25.445 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Oct 28 19:05:25.445 HYPERVISOR: exec_cmd: vm start R3 
+Oct 28 19:11:20.309 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:11:20.309 HYPERVISOR: exec_cmd: vm stop R3 
+Oct 28 19:11:20.540 VM: VM R3 shutdown.
+Oct 28 19:11:20.545 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:14:00.885 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:14:00.885 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 1 0 
+Oct 28 19:14:00.885 HYPERVISOR: exec_cmd: nio delete udp-7e9cb583-12c6-4100-a608-38f8a4ff87da 
+Oct 28 19:14:13.464 HYPERVISOR: exec_cmd: nio create_udp udp-5684058a-defd-4f8d-aca7-21d3400d14f9 10030 127.0.0.1 10031 
+Oct 28 19:14:13.479 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-5684058a-defd-4f8d-aca7-21d3400d14f9 
+Oct 28 19:14:13.479 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:14:53.117 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Oct 28 19:14:53.117 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\FAROL\Documents\Administracion de Servicios en Red\Examenes\Examen 01\Examen\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Oct 28 19:14:53.133 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:14:53.133 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Oct 28 19:14:53.133 HYPERVISOR: exec_cmd: vm start R3 
+Oct 28 19:17:30.340 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:17:30.340 HYPERVISOR: exec_cmd: vm stop R3 
+Oct 28 19:17:30.597 VM: VM R3 shutdown.
+Oct 28 19:17:30.598 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:17:35.003 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:17:35.005 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:17:36.278 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 19:17:36.279 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 19:17:36.283 HYPERVISOR: exec_cmd: vm delete R3 
+Oct 28 19:17:36.283 VM: VM R3 destroyed.
+Oct 28 19:17:36.302 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 28 19:17:36.667 HYPERVISOR: Stopped.
+Oct 28 19:17:36.667 GENERAL: reset done.

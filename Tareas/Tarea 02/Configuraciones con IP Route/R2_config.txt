@@ -1,0 +1,24 @@
+conf t
+enable secret 1234
+service password-encryption
+interface f2/0
+ip address 192.168.122.130 255.255.255.252
+no shutdown
+exit
+line vty 0 15
+password 12345678
+login local
+transport input telnet
+ exit
+username admin password admin01
+exit
+conf t
+ip route 192.168.122.64 255.255.255.192 192.168.122.129
+ip route 192.168.122.0 255.255.255.192 192.168.122.129
+ip route 192.168.122.136 255.255.255.252 192.168.122.129
+ip route 192.168.122.132 255.255.255.252 192.168.122.129
+end
+write
+copy running-config startup-config
+
+
